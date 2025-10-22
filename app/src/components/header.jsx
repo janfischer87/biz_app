@@ -19,8 +19,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <header><nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
         <div className="container">
           {/* 🔹 Logo / Brand */}
           <a className="navbar-brand fw-bold" href="#home">
@@ -72,6 +71,7 @@ export default function Header() {
           </div>
         </div>
       </nav>
+      
     </header>
   );
 }
