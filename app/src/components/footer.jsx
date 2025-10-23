@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
 
-export default function Footer({ count, setCount }) {
+export default function Footer() {
+    const [count, setCount] = useState(0)
+
   return (
     <section id="footer" className="footer-section py-5">
       <div className="container py-5">
