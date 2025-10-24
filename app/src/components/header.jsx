@@ -43,7 +43,7 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#home">
+                <a className="nav-link active" aria-current="page" href="#halo">
                   Home
                 </a>
               </li>
