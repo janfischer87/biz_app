@@ -40,3 +40,68 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Farbvariablen */
+:root{
+  --grad-1: #7f5af0;
+  --grad-2: #ff7ab6;
+  --grad-3: #00c2ff;
+}
+
+/* Gradient-Text */
+.text-gradient {
+  background: linear-gradient(90deg, var(--grad-1), var(--grad-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* wichtig: Text wird aus dem Hintergrund ausgeschnitten */
+  display: inline-block;
+}
+
+/* Profil-Container mit Gradient-Hintergrund und weichem Halo */
+.profile {
+  position: relative;
+  display: inline-block;
+  border-radius: 1rem;
+  overflow: hidden; /* Halo darf nicht über den Container hinausgehen */
+  padding: 0.5rem; /* optional: Abstand um das Bild */
+  background: linear-gradient(135deg, rgba(127,90,240,0.08), rgba(255,122,182,0.06));
+  /* Optionaler Rahmen/Glanz */
+  box-shadow: 0 8px 30px rgba(31,41,55,0.08);
+}
+
+/* Weicher, verschwommener Farbhalo hinter dem Bild */
+.profile::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 220%;
+  height: 220%;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 30% 35%, rgba(127,90,240,0.28), transparent 20%),
+    radial-gradient(circle at 70% 70%, rgba(255,122,182,0.20), transparent 25%);
+  filter: blur(36px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Bild oben halten (sichtbar über dem Halo) */
+.profile-img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem; /* passt zum .profile border-radius */
+  object-fit: cover;
+}
+
+/* Optional: subtile Text-Gradient-Variante (zweizeilig) */
+.text-gradient--alt {
+  background: linear-gradient(180deg, var(--grad-1), var(--grad-3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
