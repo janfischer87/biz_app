@@ -4,28 +4,42 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 export default function Expertise() {
   return (
     <section id="expertise" className="expertise-section py-5">
-      <div className="container">
-        <h2 className="section-title text-center mb-4">Unsere Expertise</h2>
-        <div className="row">
-          <div className="col-md-4">
-            <h3>Webentwicklung</h3>
-            <p>
-              Wir bieten maßgeschneiderte Webentwicklungslösungen, die auf den neuesten Technologien basieren, um sicherzustellen, dass Ihre Website schnell, sicher und benutzerfreundlich ist.
-            </p>
+        <div className="container px-5 mb-5">
+          <div className="text-center mb-5">
+              <h1 className="display-5 fw-bolder mb-0"><span className="text-gradient d-inline">Approaches</span></h1>
           </div>
-          <div className="col-md-4">
-            <h3>Digitales Marketing</h3>
-            <p>
-              Unser Team hilft Ihnen dabei, Ihre Online-Präsenz zu stärken und Ihre Zielgruppe effektiv zu erreichen durch SEO, Social Media Marketing und Content-Erstellung.
-            </p>
+          <div className="container">
+              <div className="row gx-5 justify-content-center">
+                  <div className="col-sm">
+                      <div className="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                          <div className="card-body p-0">
+                              <div className="d-flex align-items-center">
+                                  <div className="p-5">
+                                      <h2 className="fw-bolder">Data-centric</h2>
+                                      <img className="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div className="col-sm">
+                      <div className="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                          <div className="card-body p-0">
+                              <div className="d-flex align-items-center">
+                                  <div className="p-5">
+                                      <h2 className="fw-bolder">People-centric</h2>
+                                      <img className="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                  </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>    
           </div>
-          <div className="col-md-4">
-            <h3>Beratung & Strategie</h3>
-            <p>
-              Wir bieten umfassende Beratungsdienste, um Ihnen zu helfen, Ihre Geschäftsstrategie zu optimieren und nachhaltiges Wachstum zu fördern.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );

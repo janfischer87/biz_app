@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section id="about" className="about-section py-5">
       <div className="container">
-        <h2 className="section-title text-center mb-4">Über uns</h2>
+        <h1 className="display-5 fw-bolder mb-0"><span className="text-gradient d-inline">Über uns</span></h1>
         <div className="row">
           <div className="col-md-6">
             <p>

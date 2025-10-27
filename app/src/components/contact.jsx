@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section id="contact" className="contact-section py-5">
       <div className="container">
-        <h2 className="section-title text-center mb-4">Kontaktieren Sie uns</h2>
+        <h1 className="display-5 fw-bolder mb-0"><span className="text-gradient d-inline">Kontaktieren Sie uns</span></h1>
         <div className="row justify-content-center">
           <div className="col-md-8">
             <form>

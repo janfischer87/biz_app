@@ -5,7 +5,7 @@ export default function Solutions() {
   return (
     <section id="solutions" className="solutions-section py-5">
       <div className="container">
-        <h2 className="section-title text-center mb-4">Unsere Lösungen</h2>
+        <h1 className="display-5 fw-bolder mb-0"><span className="text-gradient d-inline">Unsere Leistungen</span></h1>
         <div className="row">
           <div className="col-md-4">
             <h3>E-Commerce</h3>
